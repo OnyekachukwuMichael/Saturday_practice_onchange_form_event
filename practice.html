@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  
+  <style>
+  
+  body{
+    transform: translateY(30vh);
+    height: 100vh;
+  }
+  
+    #label{
+      font-size: 2rem;
+      font-weight: bold;
+      font-family: Tahoma;
+    }
+    
+    select{
+      font-size: 1.5rem;
+    }
+    
+    .main{
+      background-color: #fff;
+      box-shadow: 0 4px 8px gray;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    
+  </style>
+  
+</head>
+<body>
+  <div class="main">
+  <div id="label">
+  <label>Choose Your Country</label>
+  </div>
+  
+  <select id="country" onchange="country()">
+    <option id="USA">USA</option>
+    <option id="Canada">Canada</option>
+    <option id="France">France</option>
+  </select>
+  <p id="output"> </p>
+  </div>
+  
+  <script>
+    function country(){
+      let country = document.getElementById("country").value;
+    
+    let output = document.getElementById("output");
+    
+    alert(country + " "  + "selected");
+    
+    }
+    
+  </script>
+  
+  
+</body>
+</html>
